@@ -1,4 +1,5 @@
-# Scenarios
+# Arrival Rate
 ---
 
-Introducing `scenarios`, where you can define several stages for your test.
+Introducing the `constant-arrival-rate` executor.
+We use the `request-watch` app to see how many requests are actually arriving, although not really necessary, the post-test summary shows you that
