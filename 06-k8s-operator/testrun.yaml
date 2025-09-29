@@ -1,0 +1,14 @@
+apiVersion: k6.io/v1alpha1
+kind: TestRun
+metadata:
+  name: k6-sample
+spec:
+  parallelism: 3
+  script:
+    configMap:
+      name: scenarios-test
+      file: script.js
+  runner:
+    metadata:
+      labels:
+        testname: "my-test"
